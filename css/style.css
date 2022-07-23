@@ -430,7 +430,7 @@ details > a:hover{
     }
 
     .new h2{
-        margin: 3em 40% .5em 40%;
+        margin: 0 40% .5em 40%;
         margin-top: 1px;
     }
 }
@@ -439,6 +439,11 @@ details > a:hover{
 
     .container-slide{
         height: 100vh;
+    }
+
+    .new h2{
+        margin: 0 40% .5em 40%;
+        margin-top: 6px;
     }
 
 }
