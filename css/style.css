@@ -426,7 +426,7 @@ details > a:hover{
 
 @media (max-width: 900px) {
     .container-slide{
-        height: 50vh;
+        height: 80vh;
     }
 
     .new h2{
@@ -438,7 +438,7 @@ details > a:hover{
 @media (max-width: 500px) {
 
     .container-slide{
-        height: 65vh;
+        height: 100vh;
     }
 
 }
