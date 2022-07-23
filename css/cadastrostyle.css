@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+:root{
+
+    --cor0: #fcfaf9;
+    --cor1: #ffedec;
+    --cor2: #ffd6d4;
+    --cor3: #9f807e;
+    --cor4: #3a2b2a;
+    --cor5: #9f807e60;
+
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-destaque: 'Playfair Display', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-destaque);
+    background: var(--cor5);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vh;
+    background: var(--cor1);
+    border-radius: 10px;
+    padding-bottom: 2%;
+}
+
+@media (max-width: 1000px) {
+
+    .center{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40vh;
+    }
+    
+}
+
+@media (max-width: 600px) {
+
+    .center{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30vh;
+    }
+    
+}
+
+@media (max-width: 400px) {
+
+    .center{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30vh;
+    }
+
+    .center h1{
+        text-align: center;
+        padding: 0 0 20px 0;
+        border-bottom: 1px solid silver;
+        font-size: 1em;
+    }
+  
+}
+
+.head{
+    border-bottom: 1px solid silver;
+}
+
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+   
+}
+
+ion-icon{
+    color: var(--cor4);
+    width: 25px;
+    height: 25px;
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+   
+}
+
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid var(--cor4);
+    margin: 30px 0;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 1em;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: var(--cor4);
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+}
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background: var(--cor3);
+    translate: .5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label
+{
+    top: -5px;
+    color: var(--cor4);
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before
+{
+    width: 100%;
+}
+
+.pass{
+    margin: -5px 0 20px 5px;
+    color: var(--cor4);
+    cursor: pointer;
+}
+
+.pass:hover{
+    text-decoration: underline;
+}
+
+button[type="Submit"]
+{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: var(--font-destaque);
+    margin-bottom: 12% ;
+}
+
+button[type="Submit"]:hover
+{
+    background: var(--cor3);
+    transition: .3s;
+}
+
+button > a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: var(--font-destaque);
+}
+
+button > a:hover{
+    color: var(--cor1);
+    transition: .3s;
+}
+
+.signup_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: .6em;
+    color: var(--cor4);
+    font-family: var(--font-destaque);
+    font-weight: 800;
+}
+
+.signup_link a {
+    color: var(--cor4);
+    text-decoration: none;
+    font-size: .6em;
+}
+
+.signup_link a:hover{
+    text-decoration: underline;
+}
+
+.HomeAbout{
+    width: 100vw;
+    height: 25vh;
+}
