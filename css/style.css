@@ -430,8 +430,15 @@ details > a:hover{
     }
 
     .new h2{
-        margin: 0 40% .5em 40%;
+        margin: 0 40% 0 40%;
         margin-top: 1px;
+    }
+    .slider{
+        height: 200px;
+    }
+
+    .container-slide {
+        height: 30vh;
     }
 }
 
@@ -442,10 +449,17 @@ details > a:hover{
     }
 
     .new h2{
-        margin: 0 40% .5em 40%;
-        margin-top: 6px;
+        margin: 0 40% 0 40%;
+        margin-top: 1px;
     }
 
+    .slider{
+        height: 200px;
+    }
+
+    .container-slide {
+        height: 30vh;
+    }
 }
 
 .new h2{
